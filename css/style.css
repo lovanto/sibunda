@@ -1,0 +1,244 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+  scroll-behavior: smooth;
+}
+a:hover{
+  text-decoration: none;
+}
+
+.hideme{
+  opacity: 0;
+}
+
+.background1{
+	background-image: url(../images/background/header.png);
+    height: 586px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-attachment: fixed;*/
+}
+
+.background2{
+  margin-top: -33px;
+    height: 700px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.gambarHorizontal{
+  height: 40%;
+  width: 60%;
+}
+
+.gambarVertikal{
+  height: 60%;
+  width: 40%;
+}
+
+.lebarContainer{
+  width: 38%;
+}
+
+.fontContainer{
+  font-size: 15px;
+}
+
+.settingContainer{
+  float: right;
+}
+
+.mainContainer{
+margin-bottom: 80px;
+padding-top: 30px;
+}
+
+.garis{
+  border: none; 
+  width: 150px;
+  margin-left: 0;
+  height: 5px; 
+  color: #007bff; 
+  background-color: #007bff; 
+  margin-bottom: 30px;
+}
+
+.sosmed{
+  width: 1.6em;
+  height: 1.6em;
+}
+
+.marLeft{
+  margin-left: 5%;
+}
+
+.py-5{
+padding-top: 1rem !important;
+}
+
+.color2{
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.boldFont{
+	font-weight: 700;
+}
+
+.headerFont{
+	font-weight: 800;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	font-size: 80px;
+}
+
+.littleFont{
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	font-size: 23px;
+}
+
+.buttonFont{
+	text-transform: uppercase;
+	font-family: "Open Sans", Helvetica, sans-serif;
+	font-size: 0.9rem;
+}
+
+.space{
+	margin: 0 20px;
+}
+
+.arrowMargin{
+  margin-top: 23%
+}
+
+.animasi {
+  -webkit-animation-duration: .7s;
+  animation-duration: .7s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes lompat {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+  }
+}
+
+@keyframes lompat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.lompat {
+  -webkit-animation-name: lompat;
+  animation-name: lompat;
+}
+
+@media (max-width: 576px) {
+.headerFont{
+  font-weight: 800;
+  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+  font-size: 60px;
+}
+
+.littleFont{
+  font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+  font-size: 17px;
+}
+
+.arrowMargin{
+  margin-top: 65%;
+}
+
+.marLeft{
+  margin-left: 8%;
+}
+
+.fontContainer{
+  font-size: 8px;
+}
+
+.settingContainer{
+  float: none;
+  margin-top: 30px;
+}
+
+.gambarHorizontal{
+  height: 55%;
+  width: 100%;
+}
+
+.gambarVertikal{
+  height: 60%;
+  width: 30%;
+}
+
+.lebarContainer{
+  width: 100%;
+}
+
+.leftSetting{
+  margin-left: 30px;
+}
+
+}
+
+@media (max-width: 976px) {
+.headerFont{
+  font-weight: 800;
+  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+  font-size: 60px;
+}
+
+.littleFont{
+  font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+  font-size: 17px;
+}
+
+.arrowMargin{
+  margin-top: 35%;
+}
+
+.marLeft{
+  margin-left: 8%;
+}
+
+.fontContainer{
+  font-size: 12.5px;
+}
+
+.settingContainer{
+  float: none;
+  margin-top: 15px;
+}
+
+.gambarHorizontal{
+  height: 55%;
+  width: 100%;
+}
+
+.gambarVertikal{
+  height: 60%;
+  width: 30%;
+}
+
+.lebarContainer{
+  width: 100%;
+}
+
+}
