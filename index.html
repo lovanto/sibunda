@@ -9,12 +9,57 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap-4.0.0.css" rel="stylesheet">
 	<!-- CSS -->
-    <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 	<link href="css/animate.css" rel="stylesheet">
 	<!-- Icon -->
-    <link rel="icon" href="images/logo.ico" type="image/x-icon" />
+    <link rel="icon" href="images/icon.ico" type="image/x-icon" />
   </head>
   <body>
+     
+    <!-- modal masuk -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">MASUK</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body" align="center"> 
+        <input type="email" name="emailLogin" class="form-control" style="margin-bottom: 10px;" placeholder="Email">
+         <input type="password" name="passwordLogin" class="form-control" style="margin-bottom: 10px;" placeholder="Password">
+         <a href="" class="links" data-toggle="modal" data-target="#myModal2" data-dismiss="modal">Belum Punya Akun ? Daftar Disini</a>
+        </div>
+        <div class="modal-footer">
+         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2"data-dismiss="modal">Daftar</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"data-dismiss="modal" value="Login1">Masuk</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- modal daftar-->
+  <div class="modal" id="myModal2">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Daftar Anggota Baru</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+        <input type="text" name="nama" class="form-control" style="margin-bottom: 10px;" placeholder="Masukan Nama Lengkap Anda">
+        <input type="text" name="no.telp" class="form-control" style="margin-bottom: 10px;" placeholder="Masukan No. Telepon Anda">
+        <input type="email" name="emailLogin" class="form-control" style="margin-bottom: 10px;" placeholder="Masukan Email Anda">
+         <input type="password" name="passwordLogin" class="form-control" style="margin-bottom: 10px;" placeholder="Masukan Password Anda">
+  
+        </div>
+        <div class="modal-footer">
+         <button type="button" class="btn btn-primary" data-dismiss="modal" value="Sign Up1">Daftar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
     <nav class="navbar navbar-expand-lg navbar-light" style="margin: 10px 0; font-size: 13px; margin-left: 10px;">
        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
        <span class="navbar-toggler-icon"></span>
@@ -36,9 +81,13 @@
 			  <li class="nav-item boldFont space">
                 <a class="nav-link boldFont" href="#pertunjukan">Pertunjukan Rakyat</a>
              </li>
+             <li class="nav-item boldFont space">
+                <a class="nav-link boldFont" href="#footer">Hubungi Kami</a>
+             </li>
+
           </ul>
        </div>
-       <button class="btn btn-primary buttonFont my-2 my-sm-0" type="submit" style="margin-left: 20px; margin-right: 10px;"><div style="float: left;"><img src="images/flaticon/profile.png" width="17"></div> <div style="float: right; margin-left: 10px;">Masuk</div></button>
+       <button class="btn btn-primary buttonFont my-2 my-sm-0" type="submit" style="margin-left: 20px; margin-right: 10px;"><div style="float: left;"><img src="images/flaticon/profile.png" width="17"></div> <div data-toggle="modal" data-target="#myModal" style="float: right; margin-left: 10px;">Masuk</div></button>
     </nav>
 
 <!--   Below_Nav   -->
@@ -58,19 +107,21 @@
       <hr class="garis hideme">
       <div>
         <img src="images/materi/sinden.jpg" class="gambarHorizontal hideme">
-        <div class="lebarContainer fontContainer hideme settingContainer">Lorem Ipsum Dolor ahmet Sin dautax mer zer ifIlow merx draxx gamora thanos is infint la dolor Ah et no Kau siuahx merfp stone gauntlax cawh Lorem Ipsum Dolor ahmet Sin dautax mer zer ifIlow merx draxx gamora thanos is infint la dolor Ah et no Kau siuahx merfp stone gauntlax cawh
+        <div class="lebarContainer fontContainer hideme settingContainer">Lagu daerah jawa barat merupakan cerminan budaya sunda yang sangat kental, dari mulai lirik, makna dan instrumentalnya.
+Kali ini kami akan merangkum kumpulan lagu daerah jawa barat agar mempermudah pencarian.
+Bagi warga masyarakat jawa barat khususnya pelajar sudah selayaknya mempelajari dan menyanyikan lagu-lagu daerahnya agar lestari dan tak terlupakan.
           <br><br>
           <p class="boldFont">Kota :</p>
         <select class="form-control">
+          <option value="">- Pilih Kota -</option>
           <option value="Bandung">Bandung</option>
+          <option value="Sumedang">Sumedang</option>
+          <option value="Indramayu">Indramayu</option>
+          <option value="Majalengka">Majalengka</option>
+          <option value="Cirebon">Cirebon</option>
         </select>
         <br>
-        <p class="boldFont">Kesenian :</p>
-        <select class="form-control">
-          <option value="Bandung">Mojang Priangan</option>
-        </select>
-        <br>
-        <button class="btn btn-primary">Cari</button>
+        <a href="lagu.html" class="btn btn-primary" role="button">Tampilkan</a>
         </div>
       </div>
 </div>
@@ -81,19 +132,20 @@
       <hr class="garis hideme">
       <div>
         <img src="images/materi/tarian.jpg" class="gambarHorizontal hideme">
-        <div class="lebarContainer fontContainer hideme settingContainer">Lorem Ipsum Dolor ahmet Sin dautax mer zer ifIlow merx draxx gamora thanos is infint la dolor Ah et no Kau siuahx merfp stone gauntlax cawh Lorem Ipsum Dolor ahmet Sin dautax mer zer ifIlow merx draxx gamora thanos is infint la dolor Ah et no Kau siuahx merfp stone gauntlax cawh
+        <div class="lebarContainer fontContainer hideme settingContainer">
+          Seperti yang kita ketahui, Indonesia adalah Negara dimana banyak sekali suku dan budaya yang ada di dalamnya. Khususnya untuk daerah Jawa Barat, ternyata tarian tradisional Jawa Barat tidak hanya berjumlah satu saja. Ada beberapa tarian tradisional Jawa Barat yang sangat unik dan asyik dimana budaya asli Jawa Barat masih terasa kental di dalam unsur tarian tersebut. Oleh karena itu, kali ini kami ingin berbagi info seputar beberapa tarian tradisional Jawa Barat. Kami sendiri telah merangkum tarian tradisional Jawa Barat yang wajib dipertahankan. Apa sajakah tarian itu? 
           <br><br>
           <p class="boldFont">Kota :</p>
         <select class="form-control">
+          <option value="">- Pilih Kota -</option>
           <option value="Bandung">Bandung</option>
+          <option value="Sumedang">Sumedang</option>
+          <option value="Indramayu">Indramayu</option>
+          <option value="Majalengka">Majalengka</option>
+          <option value="Cirebon">Cirebon</option>
         </select>
         <br>
-        <p class="boldFont">Kesenian :</p>
-        <select class="form-control">
-          <option value="Bandung">Mojang Priangan</option>
-        </select>
-        <br>
-        <button class="btn btn-primary">Cari</button>
+        <a href="tari.html" class="btn btn-primary" role="button">Tampilkan</a>
         </div>
       </div>
 </div>
@@ -104,48 +156,94 @@
       <hr class="garis hideme">
       <div>
         <img src="images/materi/alat.jpg" class="gambarHorizontal hideme">
-        <div class="lebarContainer fontContainer hideme settingContainer">Lorem Ipsum Dolor ahmet Sin dautax mer zer ifIlow merx draxx gamora thanos is infint la dolor Ah et no Kau siuahx merfp stone gauntlax cawh Lorem Ipsum Dolor ahmet Sin dautax mer zer ifIlow merx draxx gamora thanos is infint la dolor Ah et no Kau siuahx merfp stone gauntlax cawh
+        <div class="lebarContainer fontContainer hideme settingContainer">Berbicara mengenai alat musik tradisional Jawa Barat, kita boleh bangga karena beberapa alat musik tradisional dari tanah sunda ini cukup mendunia, bahkan ada juga yang sampai dijadikan warisan budaya dunia oleh Unesco 
+		Bisa dibilang alat musik tradisional jawa barat cukup beragam.
 <br><br>
           <p class="boldFont">Kota :</p>
         <select class="form-control">
+          <option value="">- Pilih Kota -</option>
           <option value="Bandung">Bandung</option>
+          <option value="Sumedang">Sumedang</option>
+          <option value="Indramayu">Indramayu</option>
+          <option value="Majalengka">Majalengka</option>
+          <option value="Cirebon">Cirebon</option>
         </select>
         <br>
-        <p class="boldFont">Kesenian :</p>
-        <select class="form-control">
-          <option value="Bandung">Mojang Priangan</option>
-        </select>
-        <br>
-        <button class="btn btn-primary">Cari</button>
+        <a href="alatmusik.html" class="btn btn-primary" role="button">Tampilkan</a>
         </div>
       </div>
 </div>
 
 <!--   Pertujukan_Rakyat_Daerah   -->
-<div class="container mainContainer" id="pertunjukan" style="margin-bottom: 110px;">
+<div class="container mainContainer" id="pertunjukan">
   <p class="boldFont hideme">Pertunjukan Rakyat</p>
       <hr class="garis hideme">
       <div>
         <img src="images/materi/pertunjukan.jpg" class="gambarHorizontal hideme">
-        <div class="lebarContainer fontContainer hideme settingContainer">Lorem Ipsum Dolor ahmet Sin dautax mer zer ifIlow merx draxx gamora thanos is infint la dolor Ah et no Kau siuahx merfp stone gauntlax cawh Lorem Ipsum Dolor ahmet Sin dautax mer zer ifIlow merx draxx gamora thanos is infint la dolor Ah et no Kau siuahx merfp stone gauntlax cawh
-<br><br>
-          <p class="boldFont">Kota :</p>
+        <div class="lebarContainer fontContainer hideme settingContainer">Pertunjukan kesenian khas daerah jawa barat itu sangat banyak, setiap daerah jawa barat pasti memiliki sebuah pertunjuan kesenian nya masing-masing . pertujukan ini dipertunjukan untuk masyarakat . dan pertujukan rakyat itu sangat beragam.
+		<br><br>
+         <p class="boldFont">Kota :</p>
         <select class="form-control">
+          <option value="">- Pilih Kota -</option>
           <option value="Bandung">Bandung</option>
+          <option value="Sumedang">Sumedang</option>
+          <option value="Indramayu">Indramayu</option>
+          <option value="Majalengka">Majalengka</option>
+          <option value="Cirebon">Cirebon</option>
         </select>
         <br>
-        <p class="boldFont">Kesenian :</p>
-        <select class="form-control">
-          <option value="Bandung">Mojang Priangan</option>
-        </select>
-        <br>
-        <button class="btn btn-primary">Cari</button>
+        <a href="pertunjukan.html" class="btn btn-primary" role="button">Tampilkan</a>
         </div>
       </div>
 </div>
 
+<div class="container">
+  <h3 class="my-4">Postingan Terbaru</h3>
+      <div class="row">
+
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#">
+            <img class="img-fluid" src="images/materi/eslilin.jpg" alt="">
+            <div class="postFont">
+            Lagu Daerah Es Lilin
+          </div>
+          </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#">
+            <img class="img-fluid" src="images/materi/manuk.jpg" alt="">
+            <div class="postFont">
+            Lagu Daerah Manuk Dadali
+          </div>
+          </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#">
+            <img class="img-fluid" src="images/materi/pertunjukan.jpg" alt="">
+            <div class="postFont">
+            Kuda Renggong
+          </div>
+          </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#">
+            <img class="img-fluid" src="images/materi/wayang.jpg" alt="">
+            <div class="postFont">
+            Wayang Golek
+          </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+      <!-- /.row -->
+
+
 <!-- Footer -->
-<footer class="page-footer font-small unique-color-dark">
+<footer class="page-footer font-small unique-color-dark" id="footer">
 
     <div style="background-color: #007bff; height: -100px;">
       <div class="container">
@@ -193,16 +291,16 @@
           <h6 class="text-uppercase font-weight-bold">Informasi</h6>
           <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
           <p>
-            <a href="#!">Lagu Daerah</a>
+            <a href="#lagu">Lagu Daerah</a>
           </p>
           <p>
-            <a href="#!">Tarian Daerah</a>
+            <a href="#tari">Tarian Daerah</a>
           </p>
           <p>
-            <a href="#!">Alat Musik</a>
+            <a href="#alat">Alat Musik</a>
           </p>
           <p>
-            <a href="#!">Pertunjukan Rakyat</a>
+            <a href="#pertunjukan">Pertunjukan Rakyat</a>
           </p>
 
         </div>
@@ -243,7 +341,7 @@
           <p>
             <i class="fas fa-phone mr-3"></i> + 62 22 1001 2001</p>
           <p>
-            <i class="fas fa-print mr-3"></i> + 62 21 9000 6996</p>
+            <i class="fas fa-print mr-3"></i> + 62 24 9000 6996</p>
 
         </div>
         <!-- Grid column -->
@@ -266,6 +364,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed --> 
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap-4.0.0.js"></script>
+  </form>
   </body>
 </html>
 
